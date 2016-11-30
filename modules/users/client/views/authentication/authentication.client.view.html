@@ -1,6 +1,6 @@
-<section class="ui vertically padded container" ng-controller="AuthenticationController">
+<section class="ui very vertically padded text centered container" ng-controller="AuthenticationController">
   <h3 class="ui center aligned header">Sign in using your social accounts</h3>
-  <div class="ui one column center aligned social link grid">
+  <div class="ui centered grid">
     <button class="ui facebook button" ng-click="callOauthProvider('/api/auth/facebook')" >
       <i class="facebook icon"></i>
       Facebook
@@ -36,5 +36,7 @@
       <i class="paypal icon"></i>
     </button>
   </div>
+  <br>
+
   <div ui-view></div>
 </section>

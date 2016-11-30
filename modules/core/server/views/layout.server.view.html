@@ -36,11 +36,9 @@
 </head>
 
 <body class="ng-cloak">
-  <header ng-include="'/modules/core/client/views/header.client.view.html'" class="ui stackable fixed inverted menu"></header>
-  <section class="content">
-    <section class="">
-      {% block content %}{% endblock %}
-    </section>
+  <header ng-include="'/modules/core/client/views/header.client.view.html'" class="ui stackable fixed menu"></header>  
+  <section="ui container">
+    {% block content %}{% endblock %}
   </section>
   <footer ng-include="'/modules/core/client/views/footer.client.view.html'" class="ui attached inverted segment"></footer>
   <!--Embedding The User Object-->
