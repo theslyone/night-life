@@ -65,6 +65,12 @@ module.exports = {
     callbackURL: '/api/auth/paypal/callback',
     sandbox: true
   },
+  yelp: {
+    consumerKey: process.env.YELP_COSUMER_KEY,
+    consumerSecret: process.env.YELP_COSUMER_SECRET,
+    consumerToken: process.env.YELP_TOKEN,
+    consumerTokenSecret: process.env.YELP_TEKEN_SECRET,
+  },
   mailer: {
     from: process.env.MAILER_FROM || 'MAILER_FROM',
     options: {
