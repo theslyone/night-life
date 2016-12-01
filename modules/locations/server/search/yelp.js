@@ -2,6 +2,7 @@
 
 var Yelp = require('yelp');
 
+//TODO: move secret keys to process.env
 var yelp = new Yelp({
   consumer_key: 'FAqKyrmiGKh_WAsL7S30hQ',
   consumer_secret: 'dFvM_fy_7PYRn47qzyZ6V8d9czI',
