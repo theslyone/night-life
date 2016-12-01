@@ -19,5 +19,18 @@ angular.module('core').controller('HeaderController', ['$scope', '$state', 'Auth
     $scope.$on('$stateChangeSuccess', function () {
       $scope.isCollapsed = false;
     });
+
+    $scope.doSearch = function(keyEvent) {
+      if (keyEvent.which === 13){
+        if($scope.query) {
+          $scope.searching = true;
+          $scope.$state.go('locations', { query: $scope.query });
+        }
+        else{
+          $scope.searching = false;
+          $scope.$state.go('home');
+        }
+      }
+    };
   }
 ]);

@@ -1,9 +1,9 @@
-<section ng-controller="SettingsController">
+<section class="ui very vertically padded centered container" ng-controller="SettingsController">
   <div class="page-header">
     <h1>Settings</h1>
   </div>
-  <div class="row">
-    <nav class="col-sm-3 col-md-3">
+  <div class="ui two column grid">
+    <nav class="six wide column">
       <ul class="nav nav-pills nav-stacked">
         <li ui-sref-active="active">
           <a ui-sref="settings.profile">Edit Profile</a>
@@ -19,7 +19,7 @@
         </li>
       </ul>
     </nav>
-    <div class="col-sm-9 col-md-8 settings-view">
+    <div class="ten wide column settings-view">
       <div ui-view></div>
     </div>
   </div>

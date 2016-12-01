@@ -41,7 +41,7 @@ a:hover .header-profile-image {
 header {
   width: 100%;
   height: 150px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -170,7 +170,7 @@ header.smaller a {
 }
 
 .main.container h1:first-child{
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .vertically.padded{

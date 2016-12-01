@@ -14,9 +14,10 @@
       ng-if="item.type !== 'dropdown' && item.shouldRender(authentication.user);" ui-sref="{{item.state}}" class="item" ng-bind="item.title"></a>
   </div>
   <div class="right search menu">
-    <div class="ui right aligned place search item">
+    <div class="ui right aligned place search item" ng-class="{'loading': searching}">
       <div class="ui icon input">
-        <input class="prompt" type="search" placeholder="Search location...">
+        <input class="prompt search" type="search" placeholder="Search by location..."
+        ng-model="query" ng-model-options="{ debounce: 200 }" ng-keypress="doSearch($event)">
         <i class="search link icon"></i>
       </div>
     </div>
