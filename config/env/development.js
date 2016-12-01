@@ -66,8 +66,8 @@ module.exports = {
     sandbox: true
   },
   yelp: {
-    consumerKey: process.env.YELP_COSUMER_KEY,
-    consumerSecret: process.env.YELP_COSUMER_SECRET,
+    consumerKey: process.env.YELP_CONSUMER_KEY,
+    consumerSecret: process.env.YELP_CONSUMER_SECRET,
     consumerToken: process.env.YELP_TOKEN,
     consumerTokenSecret: process.env.YELP_TEKEN_SECRET,
   },
